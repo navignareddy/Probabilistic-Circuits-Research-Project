@@ -13,6 +13,14 @@ A research project (11/2024–05/2025) exploring probabilistic circuits and grad
 - Experiments & Results (to be added)
 
 ## Overview
+
+## Problem Statement
+We study minimal feature explanations: given a model f and input x, find the smallest subset S of features such that f(x_S) preserves the original prediction/likelihood within a tolerance. We target both generative models (likelihood preservation) and multi-label classification (per-label predictive consistency).
+
+## Guarantees (informal)
+- Soundness: If our procedure returns S, then removing features outside S changes the objective by at most ε with probability ≥ 1 − δ under the data distribution.
+- Minimality bias: The optimisation includes a sparsity-promoting penalty and circuit-based constraints to prefer small S.
+- Efficiency: Circuit structure induces decompositions enabling near-linear passes in the number of active edges for inference.
 This repository tracks the end-to-end research workflow: problem framing, theory, algorithms, Julia implementation, experiments, and a short write-up.
 
 ## Motivation
