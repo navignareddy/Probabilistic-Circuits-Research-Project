@@ -34,3 +34,14 @@ Modern models are accurate but hard to interpret. We want faithful, compact expl
 - Week of Sep 1: Visual banner and polish.
 - Week of Sep 8: Experiments and results.
 - Week of Sep 15: Docs site and final polish.
+
+## Methods
+### Probabilistic circuits
+We use structured decomposable probabilistic circuits to represent joint distributions with tractable marginalisation. This enables efficient "what-if" reasoning when masking subsets of features.
+
+### Gradient-based subset selection
+We relax subset selection with continuous gates, optimise a Lagrangian that trades off fidelity and sparsity, and then discretise via thresholding with stability checks.
+
+### Hybrid joint-independent objective
+We combine a joint-likelihood term with per-label independent terms for multi-label tasks. This hybrid objective yields robust subsets that generalise and led to 85% accuracy with ~60% features in our study.
+
