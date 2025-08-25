@@ -45,3 +45,14 @@ We relax subset selection with continuous gates, optimise a Lagrangian that trad
 ### Hybrid joint-independent objective
 We combine a joint-likelihood term with per-label independent terms for multi-label tasks. This hybrid objective yields robust subsets that generalise and led to 85% accuracy with ~60% features in our study.
 
+
+## Julia implementation
+- Language: Julia 1.10
+- Key packages: Flux.jl (optimisation), Distributions.jl, DataFrames.jl, Zygote.jl, Plots.jl.
+- Circuits: nodes stored as typed structs; upward/downward passes for marginals; caching for reused sub-circuits.
+- Optimisation: Adam with cosine decay; early stopping by held-out fidelity; temperature annealing for gate relaxation.
+- Reproducibility: fixed seeds, versioned manifests, and deterministic passes for evaluation.
+
+### Quickstart (coming soon)
+We will publish minimal examples for generative likelihood preservation and multi-label classifiers once we package the code.
+
