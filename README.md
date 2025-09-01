@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.svg" alt="Probabilistic Circuits Banner" width="100%"/>
+</p>
+
 # Probabilistic Circuits for Minimal-Feature Explanations
 
 A research project (11/2024–05/2025) exploring probabilistic circuits and gradient-based optimisation to find the smallest set of features that still explains a model’s predictions in generative and multi-label settings.
