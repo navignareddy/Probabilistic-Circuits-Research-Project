@@ -60,6 +60,22 @@ Inference with circuits scales with the number of active edges; one optimisation
 - Circuits are typed structs with cached upward/downward passes for marginals; masking hooks integrate out gated variables exactly.
 - Reproducibility: fixed seeds, deterministic passes, and versioned environments.
 
+
+## Limitations & Future Work
+- Structural assumptions: decomposability/determinism enable tractable inference but may require structure learning; exploring learned circuits for richer dependencies is ongoing.
+- Tolerance calibration: choosing \(\varepsilon\) trades fidelity for sparsity; adaptive control (e.g., target retention schedules) is a promising extension.
+- Sparsity priors: beyond L1, structured/group sparsity and stability penalties may better respect domain constraints and correlations.
+- Scaling: for images/text, feature groups and amortised gates over embeddings can reduce dimensionality while retaining semantics.
+- Causality: incorporating interventional objectives could yield subsets that are robust under distribution shift.
+
+## Reproducibility Checklist
+- Environment: Julia 1.10; record `Project.toml`/`Manifest.toml`.
+- Data: describe preprocessing, normalisation, and train/val/test splits.
+- Randomness: fix global seeds; specify bootstrap resamples and batch shuffles.
+- Commands: provide scripts for training, gating optimisation, thresholding, and discrete refinement.
+- Metrics: report fidelity drop, subset size, runtime, and stability with confidence intervals.
+- Hardware: CPU/GPU type and average runtime per epoch/step.
+
 ## Citation
 If this work is useful, please cite:
 
@@ -72,6 +88,3 @@ If this work is useful, please cite:
   url          = {https://github.com/navignareddy/Probabilistic-Circuits-Research-Project}
 }
 ```
-
-## Contact
-Questions and collaborations: please open an issue in the repository.
