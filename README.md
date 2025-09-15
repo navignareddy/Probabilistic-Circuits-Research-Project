@@ -74,3 +74,11 @@ We will publish minimal examples for generative likelihood preservation and mult
 ## Figures (coming soon)
 We will add lightweight diagrams illustrating circuit structure and the optimisation landscape.
 
+
+## Getting Started (placeholder)
+We will release concise Julia notebooks demonstrating:
+1) minimal-feature selection for a VAE-like generative model, and
+2) multi-label classification with circuit-guided masks.
+
+If you would like early access, please open an issue.
+
