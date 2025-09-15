@@ -11,5 +11,5 @@
   <circle cx="200" cy="60" r="140" fill="url(#g)" opacity="0.35" filter="url(#blur)"/>
   <circle cx="1000" cy="240" r="160" fill="url(#g)" opacity="0.35" filter="url(#blur)"/>
   <text x="50%" y="46%" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="44" fill="white">Probabilistic Circuits Research</text>
-  <text x="50%" y="66%" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="22" fill="#d1d5db">Minimal‑Feature Explanations • 11/2024 – 05/2025</text>
+  <text x="50%" y="66%" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="22" fill="#d1d5db">Minimal‑Feature Explanations</text>
 </svg>
